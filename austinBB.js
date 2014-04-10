@@ -5,6 +5,8 @@ require('dotenv')().load();
 // Require keystone
 var keystone = require('keystone');
 
+keystone.set('cloudinary config', 'cloudinary://615468279898753:gSRQ97jX3HZOHDMdT9M4B31JGiQ@do2vzerc2');
+
 // Initialise Keystone with your project's configuration.
 // See http://keystonejs.com/guide/config for available options
 // and documentation.
@@ -34,6 +36,8 @@ keystone.init({
 // Load your project's Models
 
 keystone.import('models');
+
+
 
 // Setup common locals for your templates. The following are required for the
 // bundled templates and layouts. Any runtime locals (that should be set uniquely
@@ -93,6 +97,8 @@ keystone.set('nav', {
 	'galleries': 'galleries',
 	'users': 'users'
 });
+
+
 
 // Start Keystone to connect to your database and initialise the web server
 
